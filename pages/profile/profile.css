@@ -1,0 +1,183 @@
+#containerCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.img-holder{
+    height: 30rem;
+    max-width: 30rem;
+ 
+}
+
+.recipeImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.categories{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+}
+
+.categoryBtn{
+    padding: 0.5rem 1.2rem;
+    background: black;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+
+}
+
+.categoryBtn.active{
+    background: white;
+    color: black;
+    border-radius: 2rem;
+    border: 2px solid black;
+    
+}
+
+.gridspan-4, .zeroResults{
+    padding-top: 5rem;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    text-align: center;
+    font-size: 9rem;
+}
+
+.profilePicProfilePage{
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 10rem;
+    overflow: hidden;
+}
+
+.profilePicProfilePageImg{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+
+.grid{
+    display: grid;
+}
+
+.grid-2-cols{
+    grid-template-columns: 1fr 1fr;
+}
+
+.picInfoDiv{
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+    align-items: center;
+}
+
+.profileUserDiv{
+    max-width: 60rem;
+}
+
+.activityDivProfile{
+    font-weight: 500;
+    gap: 2rem;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+.h4{
+    width: 4rem;
+    height: 4rem;
+    padding: 0.4rem;
+    color: white;
+    background: black;
+    margin: 0 auto;
+    border-radius: 5rem;
+}
+
+.ctaProfilePage{
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    color: white;
+    background: black;
+}
+
+/* .actionColumn{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btnEdit, .btnDelete{
+
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+}
+
+.btnEdit{
+    background: gray;
+    color: white;
+}
+.btnDelete{
+    background: rgb(63, 0, 0);
+    color: white;
+} */
+
+.recipePostSection{
+    max-width: 100rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-top: 4rem;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.recipeImgDiv{
+    max-width: 10rem;
+    display: inline-block;
+}
+.recipeImg{
+    max-width: 20rem;
+    display: inline-block;
+}
+
+.card-img-post{
+    height: 30rem;
+    object-fit: cover;
+}
+
+.infoDiv{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.infoDiv, .infoDiv span{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.actionBtns{
+    font-size: 3rem;
+    position: absolute;
+    right: 2rem;
+    row-gap: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.392);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+
+
+

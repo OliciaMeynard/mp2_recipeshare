@@ -1,0 +1,187 @@
+#containerCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.img-holder{
+    height: 30rem;
+    max-width: 30rem;
+ 
+}
+
+.recipeImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.categories{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: 6rem;
+}
+
+.categoryBtn{
+    padding: 0.5rem 1.2rem;
+    background: black;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+
+}
+
+.categoryBtn.active{
+    background: white;
+    color: black;
+    border-radius: 2rem;
+    border: 2px solid black;
+    
+}
+
+.gridspan-4, .zeroResults{
+    padding-top: 5rem;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    text-align: center;
+    font-size: 9rem;
+}
+
+.card{
+    border: none;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    max-width: 40rem;
+}
+
+
+
+  
+  
+  
+
+  
+   @media (min-width: 200px) {
+  
+    #containerCards{
+     
+        grid-template-columns: 1fr;
+  
+    }
+    .categories{
+ 
+        grid-template-columns: 1fr 1fr;
+
+    }
+    
+
+  
+  }
+   @media (min-width: 400px) {
+  
+    #containerCards{
+     
+        grid-template-columns: 1fr;
+  
+    }
+
+    .categories{
+ 
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+    
+
+  
+  }
+   @media (min-width: 650px) {
+  
+  
+    #containerCards{
+     
+        grid-template-columns: 1fr 1fr;
+  
+    }
+    .categories{
+ 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+    
+  
+  }
+  
+  
+  
+  
+  
+
+  
+  @media (min-width: 800px) {
+  
+
+
+    #containerCards{
+     
+        grid-template-columns: 1fr 1fr 1fr;
+  
+    }
+
+    
+    
+
+  
+  }
+  
+  
+  
+  
+  
+
+  @media (min-width: 992px) {
+  
+
+    #containerCards{
+     
+        grid-template-columns: 1fr 1fr 1fr;
+  
+    }
+    .categories{
+ 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    }
+
+    
+
+  
+  }
+  
+  
+  
+  
+  
+  
+  @media (min-width: 1200px) {
+  
+    #containerCards{
+     
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+    }
+    
+  
+    }
+  
+  
+
+  
+  
+
+  

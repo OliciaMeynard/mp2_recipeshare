@@ -1,0 +1,9 @@
+#prodImgDiv{
+    height: 15rem;
+    width: 15rem;
+}
+
+#prodImg{
+    width: 100%;
+    object-fit: cover;
+}

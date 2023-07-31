@@ -1,0 +1,442 @@
+/* *{
+
+} */
+
+html, body{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+a:link{
+    text-decoration: none;
+}
+
+.pageContainer{
+    max-width: 80rem;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.mastHeadContainer{
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0.8rem 1.2rem;
+    height: 4.5rem;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+.mastHeadContainer .searchBarContainer{
+    margin: 0 4rem;
+    flex: 1;
+    display: flex;
+}
+.mastHeadContainer .searchBarContainer form{
+
+    flex: 1;
+    display: flex;
+}
+
+.searchBar{
+    flex: 1;
+    max-width: 60rem;
+    padding:  2px 6px;
+    border: 2px solid #ccc;
+    font-size: 14px;
+    font-weight: 100;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: #ccc 0px 1px 2px 0px inset;
+}
+
+.searhcButton{
+    border: 2px solid #ccc;
+    background: none;
+    height: 32px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 65px;
+}
+
+.mastHeadContainer .logoContainer{
+    width: 15rem;
+ 
+}
+
+.mastHeadContainer .logoContainer img{
+    height: 3.3rem;
+    margin-left: 1rem;
+}
+
+.uploadNavIcon{
+    color: #4e4e4e;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.rightIcons{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profilePictureNav{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100rem;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.navShowHide{
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.sideNavContainer{
+    width: 21rem;
+    background-color: #f5f5f5;
+    padding-top: 5rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSectionContainer{
+    padding-top: 5rem;
+
+}
+
+.mainSectionContainer.leftpadding{
+    padding-top: 5rem;
+    padding-left: 20rem;
+}
+
+.mainContentContainer{
+    padding: 1rem 3rem;
+    display: flex;
+}
+
+
+/* ////////////////// */
+/* /////////UPLOAD PAGE///////// */
+
+.column{
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    box-shadow: #00000030 0 1px 2px;
+    max-width: 70rem;
+    margin: 0 auto;
+    min-height: 26rem;
+}
+
+.textareaForm{
+    resize: none;
+}
+
+
+/* SIGN UP PAGE */
+.signInContainer{
+    background-color: #efefee;
+    height: 100vh;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+.signInContainer  .logoSignIn{
+    max-width: 10rem;
+}
+
+.signInContainer .column{
+
+    max-width: 50rem;
+    padding: 20px 35px;
+    max-height:70rem;
+    overflow-y: auto;
+}
+
+.signInContainer .column .header{
+    padding: 20px 0;
+}
+
+.pageHeaderTxt{
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.signForm{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.signForm input[type="text"],
+.signForm input[type="email"],
+.signForm input[type="password"]
+
+{
+    border: none;
+    border-bottom: #dedede 1px solid;
+    margin: 0.4rem 0;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+.signFormBtn{
+    background-color: black;
+    color: white;
+    margin: 1rem 0;
+    width: 8rem;
+}
+
+.signInMessage{
+    font-size: 12px;
+    font-weight: 400;
+    color: #4e4e4e;
+}
+
+.errorMessage{
+    /* background: red; */
+    color: red;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+.uploadDiv{
+    max-width: 60rem;
+    padding: 2rem;
+    margin: auto auto;
+}
+
+/* SINGLE VIDEO PAGE */
+
+.watchLeftColumn{
+    flex: 1;
+}
+
+.watchLeftColumn .videoPlayer{
+    width: 100%;
+}
+
+.suggestions{
+    max-width: 425px;
+    flex-grow: 1;
+    height: 100%;
+    padding-left: 24px;
+}
+
+.videoInfo{
+    width: 100%;
+    padding: 20px 0 8px 0;
+}
+.videoInfo h1{
+    overflow: hidden;
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.bottomSection{
+    display: flex;
+}
+
+.viewCount{
+    color: rgba(17,17,17,0.6);
+    font-size: 16px;
+    flex: 1;
+}
+
+/*************
+RECIPE PAGE
+*************/
+
+
+
+
+.recipeInfoTextDiv{
+    margin-top: 1rem;
+}
+
+.recipeTitle{
+    color: #4e4e4e;
+}
+
+.favoriteButton{
+
+    height: 20px;
+    width: 20px;
+}
+
+#favoriteHearticon{
+    height: 20px;
+    width: 20px;
+}
+
+.recipeInfoTextDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.uploaderInfoSubButtonDiv{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(149, 149, 149)fee;
+}
+
+.imgUploderDiv{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.uploaderImg{
+    width: 100%;
+    height: 100%;
+}
+
+.uploaderDiv{
+    display: flex;
+    gap: 2rem;
+}
+
+.commentSection .header {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.commentSection .header .commentForm .profilePicture {
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.commentSection .header .commentCount {
+    margin-bottom: 24px;
+}
+
+.commentSection .header .commentForm {
+    display: flex;
+}
+
+.commentSection .header .commentForm textarea {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #111;
+    resize: none;
+}
+
+.commentSection .header .commentForm .postComment {
+    height: 36px;
+    background-color: #2692e6;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 0 15px;
+    border-radius: 2px;
+}
+
+
+.commentForm{
+    border-bottom: 2px solid #acacac;
+    padding: 1rem 0;
+    margin-bottom: 1rem 0;
+}
+
+.comments{
+    margin-top: 2rem;
+}
+.profileImageCommenterDiv{
+    height: 50px;
+    background-color: red;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 10rem;
+    overflow: hidden;
+
+}
+
+
+.singleCommentDiv{
+    display: flex;
+    gap: 2rem;
+padding-bottom: 1.5rem;
+}
+.profileImageCommenter{
+    width: 100%;
+    height: 100%;
+}
+
+.commenterInfo{
+    flex: 1;
+}
+
+.logoHero{
+    background: url('../imgs/logo-hero.png');
+    background-size: cover;
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+
+.rotatingLogo{
+    position: absolute;
+    transform: scale( 1.4);
+    width: 100%;
+    animation: rotating 20s linear infinite;
+}
+
+.wrapper #primary-text-hero{
+    font-size: 4rem;
+    line-height: 1;
+}
+
+

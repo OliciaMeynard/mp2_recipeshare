@@ -1,0 +1,74 @@
+.pageContainer{
+    max-width: 135rem;
+    padding: 2rem;
+    margin: 0 auto;
+    background: white;
+}
+
+.divRecipeImg{
+    max-width: 90rem;
+    height: 46rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#recipeImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#favoriteButton{
+    display: flex;
+    gap: 0.7rem;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    align-items: center;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+#subButton{
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+.commentSection{
+    padding-bottom: 9rem;
+}
+
+.divDescriptionRecipe{
+    margin-bottom: 3rem;
+}
+
+.howToCookSection{
+    margin: 5rem 0;
+}
+
+.ingredient{
+    margin-bottom: 2.2rem;
+}
+
+#divIngredients, #divHowToCook{
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+#uploadedByText{
+    font-size: 2rem;
+}
+
+#dateUploaded{
+    font-size: 1rem;
+}
+
+.uploaderDiv{
+    cursor: pointer;
+}
+

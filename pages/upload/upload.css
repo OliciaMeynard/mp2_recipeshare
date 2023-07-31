@@ -1,0 +1,30 @@
+.uploadDiv{
+    max-width: 90rem;
+    padding: 2rem;
+    margin: auto auto;
+    font-size: 1.8remrem;
+    margin-top: 4rem;
+}
+
+.form-control, .form-select{
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+#prodImgDiv{
+    max-width: 30rem;
+    /* height: 30rem; */
+    object-fit: cover;
+    padding-bottom: 3rem;
+}
+
+#prodImg{
+    width: 100%;
+    height: 100%;
+
+}
+
+#add_button:hover, #add-button:active{
+    color: black;
+}
+
