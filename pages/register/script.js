@@ -38,8 +38,8 @@ function store(e){
         url: Routes.registerApi,
         data: "register=" + JSON.stringify(data),
         beforeSend: function(){
-            $('#add_button').attr("disabled","disabled");
-            $('#uploadNewRecipeForm').css("opacity",".5");
+            $('.signFormBtn').attr("disabled","disabled");
+            $('#signForm').css("opacity",".5");
         },
         success: function(response){
             let parseResponse = JSON.parse(response);
@@ -58,8 +58,8 @@ function store(e){
                 })
 
             }
-            $('#uploadNewRecipeForm').css("opacity","");
-            $("#add_button").removeAttr("disabled");
+            $('#signForm').css("opacity","");
+            $('.signFormBtn').removeAttr("disabled");
         
         },
         // error: function(xhr, status, error){

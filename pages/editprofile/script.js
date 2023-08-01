@@ -88,7 +88,7 @@ getUserLoggedin()
 			cache: false,
 			processData:false,
 			beforeSend: function(){
-				$('#add_button').attr("disabled","disabled");
+				$('.signFormBtn').attr("disabled","disabled");
 				$('.signForm').css("opacity",".5");
 			},
 			success: function(response){
@@ -103,8 +103,8 @@ getUserLoggedin()
 				}else{
 					$('.statusMsg').html(`<span style="font-size:18px;color:red">${parseResponse.description}</span>`);
 				}
-				$('#uploadNewRecipeForm').css("opacity","");
-				$("#add_button").removeAttr("disabled");
+				$('.signForm').css("opacity","");
+				$('.signFormBtn').removeAttr("disabled");
 			
 			}
 		});

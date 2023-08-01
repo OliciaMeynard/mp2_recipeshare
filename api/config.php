@@ -20,7 +20,8 @@ date_default_timezone_set('Asia/Manila');
 
 
 try {
-    $con= new PDO("mysql:dbname=" . MP2. ";host=" . DB_HOST. ";port=3306", "root", "");
+    //$con= new PDO("mysql:dbname=" . MP2. ";host=" . DB_HOST. ";port=3306", "root", "");
+    $con= new PDO("mysql:dbname=" . MP2. ";host=" . DB_HOST , DB_USER, DB_PASSWORD);
     $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
