@@ -178,6 +178,12 @@
     cursor: pointer;
 }
 
+.headerPosted{
+    width: 100%;
+    text-align: center;
+    padding-top: 7rem;
+}
+
 
 
 

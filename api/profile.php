@@ -47,13 +47,27 @@ if(isset($_GET["show"])){
             $data['recipePostedData'] = $recipePostedData;
 
 
+
+
     if(isset($_SESSION["userLoggedIn"])){
             $data['userLoggedInData'] = $userLoggedInObj->getUserData();
+
+        
+                //////CHECK IF SUBBED
+                    $userTo = $data['username'];
+                    $userFrom = $userLoggedInObj->getUserName();
+                    $query = $con->prepare("SELECT * FROM ".TBL_SUBSCRIBERS." WHERE userTo=:userTo AND
+                    userFrom=:userFrom");
+                    $query->bindParam(":userTo", $userTo);
+                    $query->bindParam(":userFrom", $userFrom);
+                    $query->execute();   
+                    $data['ifSubbed'] = $query->rowCount();;
               
     }
 
     if(!isset($_SESSION["userLoggedIn"])){
         $data['userLoggedInData'] = 'none';
+        $data['ifSubbed'] = null;
     }
 
 
@@ -64,6 +78,9 @@ if(isset($_GET["show"])){
     $response = createResponse(200, 'Id Request', 'Positive', $data); 
     echo json_encode($response);
 }
+
+
+
 
 
 
